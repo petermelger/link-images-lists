@@ -1,0 +1,155 @@
+
+body{
+    background-color: rgb(202, 224, 233);
+    color: black;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6em;
+
+
+}
+
+
+  img {
+    border-radius: 50%;
+ 
+  }
+
+a:hover{
+    color: red;
+}
+
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+.box-1
+{
+
+    border: 3px solid black;
+    background-color: rgb(199, 232, 241);
+    margin-top: 20px;
+    margin: 20px 0;
+    padding: 20px;
+
+}
+
+.box-1 h1{
+     font-family: Tahoma, sans-serif;
+     font-weight: 800;
+     font-style: italic;
+
+}
+
+.catagories{
+   
+    padding: 20px;
+    margin-top: 19px;
+    margin-bottom: 40x ;
+    border: 3px solid black;
+    line-height: 1.6em;
+    border: 3px solid black; 
+    background-color: lightblue;
+    text-align: center;
+  
+}
+
+.catagories h2{
+    text-align: center;
+}
+
+.catagories ul{
+    padding: 0;
+    list-style: square;
+    list-style: none;
+  
+    
+ 
+}
+
+.catagories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px black;
+    display: inline;
+    font-family: Tahoma, sans-serif;
+    font-weight: 800;
+    
+}
+
+footer {
+    background-color: lightblue;
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 0px;
+   
+    
+}
+.parent {
+ display: grid;
+    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-rows: 200px 1fr 150px;
+    gap: 10px 10px;
+    height: 2000px;
+    grid-template-areas: 
+   
+    ". header nav  ."
+    ". main  aside."
+    ". footer footer ."
+    ;
+
+}
+header,
+nav,
+main,
+aside,
+footer, {
+    margin: 10px;
+}
+
+
+header{
+
+grid-area: header;
+}
+nav{
+  
+   grid-area: nav;
+   text-align: center;
+
+}
+main{
+    
+    grid-area: main;
+
+}
+aside{
+    background-color: lightgreen;
+    grid-area: aside;
+
+}
+footer{
+    background-color:lightblue;
+    grid-area: footer;
+       
+
+}
+
+@media (min-width: 1024px) {
+    .parent {
+        grid-template-rows: 200px 100px 1fr 100px;
+        grid-template-columns: 30px 1fr 200px 30px;
+        grid-template-areas: 
+        ". header header ."
+        ". nav nav ."
+        ". main aside ."
+        ". footer footer .";   
+    }
+}
+
