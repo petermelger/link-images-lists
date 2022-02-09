@@ -1,0 +1,97 @@
+/* ICON COLOR */
+.fa {
+  color: #fff;
+}
+
+/* ICONS BACKGROUND COLOR */
+.fa-facebook {
+  background: #3b5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-google {
+  background: #dd4b39;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+
+.fa-instagram {
+  background: #125688;
+}
+
+.fa-github {
+  background: #333;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  right: 0%;
+  top: 20%;
+  width: 250px;
+  -webkit-transform: translateX(185px);
+          transform: translateX(185px);
+}
+
+.icons a {
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  opacity: 0.7;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+  -webkit-transition: 1.5s all;
+  transition: 1.5s all;
+}
+
+.icons a-facebook::after {
+  content: "Like my Facebookpage";
+}
+
+.icons a-twitter::after {
+  content: "Follow me on Twitter";
+}
+
+.icons a-linkedin::after {
+  content: "Connect on LinkedIn";
+}
+
+.icons a-google::after {
+  content: "Find me on Google";
+}
+
+.icons a-github::after {
+  content: "See my projects on Github";
+}
+
+.icons a-youtube::after {
+  content: "Like my YouTube page";
+}
+/*# sourceMappingURL=style.css.map */
