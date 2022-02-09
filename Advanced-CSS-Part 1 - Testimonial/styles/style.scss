@@ -1,0 +1,54 @@
+@import "./variables";
+
+/* MIXIN TEST */
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: $backgroundBody;
+  box-shadow: 0 3px 5px #919090;
+  font-size: $fontSize;
+  color: $fontColor;
+  line-height: 2;
+  font-family: $fontBody;
+  padding: 0;
+  margin-top: 50px;
+ 
+}
+
+.main {
+  background: $backgroundText;
+  width: 400px;
+  height: 300px;
+  border-radius: 15px 15px 0 0;
+
+  &__p {
+    padding: 400px 30px;
+  }
+}
+
+.footer {
+  background: $backgroundFooter;
+  width: 400px;
+  height: 100px;
+  padding: 40px 30px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+
+  &__h2 {
+    color: #fff;
+    text-transform: uppercase;
+
+    &__p {
+      color: gray;
+      text-transform: uppercase;
+    }
+  }
+}

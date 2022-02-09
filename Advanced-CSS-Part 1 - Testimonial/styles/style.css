@@ -1,0 +1,66 @@
+/* BACKGROUND COLORS */
+/* TEXT */
+* {
+  margin: 0;
+}
+
+body {
+  background: #c3cfe2;
+  box-shadow: 0 3px 3px #c4cfe3;
+  font-size: 25px;
+  color: #505050;
+  line-height: 2;
+  font-family: Helvetica;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+ margin-right: 20px;
+ 
+}
+
+main {
+  background: #fff;
+  width: 400px;
+  height: 300px;
+  border-radius: 15px 15px 0 0;
+  padding: 60px 30px;
+}
+
+footer {
+  background: #686de0;
+  color: white;
+  width: 400px;
+  height: 100px;
+  padding: 50px 30px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+
+}
+
+  /*# sourceMappingURL=style.css.map */
+
+.image {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100px;
+  border-radius: 50px;
+  outline: white 50px;
+ 
+}
+
+.circlebackground{
+   background-color:#fff;
+   border:1px white;   
+   height:120px;
+   border-radius:50%;
+   -moz-border-radius:50%;
+   -webkit-border-radius:50%;
+   width:120px;
+   display: flex;
+   margin-top: -110px;
+   margin-left: 140px;
+}
+
+/* No CSS *//*# sourceMappingURL=style.css.map */
