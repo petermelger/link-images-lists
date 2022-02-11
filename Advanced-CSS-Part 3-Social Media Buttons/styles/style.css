@@ -33,65 +33,125 @@
 }
 
 * {
-  margin: 0;
+  margin: 0px;
 }
 
 body {
-  background-color: lightblue;
+  background: #dee0e4;
 }
 
-.icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  right: 0%;
-  top: 20%;
-  width: 250px;
-  -webkit-transform: translateX(185px);
-          transform: translateX(185px);
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(200%, -50%);
+          transform: translate(200%, -50%);
 }
 
-.icons a {
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-  text-decoration: none;
+ul {
+  list-style: none;
 }
 
-.icons a:hover {
-  opacity: 0.7;
-  -webkit-transform: translateX(-150px);
-          transform: translateX(-150px);
-  -webkit-transition: 1.5s all;
-  transition: 1.5s all;
+ul li {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: #e59500;
+  margin: 0px 0;
+  cursor: pointer;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
 }
 
-.icons a-facebook::after {
-  content: "Like my Facebookpage";
+ul li .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
 }
 
-.icons a-twitter::after {
-  content: "Follow me on Twitter";
+ul li.facebook {
+  background: #3b5998;
 }
 
-.icons a-linkedin::after {
-  content: "Connect on LinkedIn";
+ul li.twitter {
+  background: #00aced;
 }
 
-.icons a-google::after {
-  content: "Find me on Google";
+ul li.instagram {
+  background: #bc2a8d;
 }
 
-.icons a-github::after {
-  content: "See my projects on Github";
+ul li.google {
+  background: #dd4b39;
 }
 
-.icons a-youtube::after {
-  content: "Like my YouTube page";
+ul li.whatsapp {
+  background: #4dc247;
+}
+
+ul li.facebook div.slider {
+  background: #3b5998;
+}
+
+ul li.twitter div.slider {
+  background: #00aced;
+}
+
+ul li.instagram div.slider {
+  background: #bc2a8d;
+}
+
+ul li.google div.slider {
+  background: #dd4b39;
+}
+
+ul li.whatsapp div.slider {
+  background: #4dc247;
+}
+
+.slider {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 0px;
+  height: 50px;
+  background: #eebb5c;
+  border-radius: 0px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+}
+
+.slider p {
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  text-decoration: underline;
+}
+
+ul li:hover .slider {
+  width: 180px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .slider p {
+  opacity: 1;
+  -webkit-transition: all 1s 0.2s ease;
+  transition: all 1s 0.2s ease;
 }
 /*# sourceMappingURL=style.css.map */
